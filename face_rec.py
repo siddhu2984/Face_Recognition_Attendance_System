@@ -11,9 +11,9 @@ import os
 import time
 from datetime import datetime
 
-hostname = 'redis-11808.c326.us-east-1-3.ec2.cloud.redislabs.com'
+hostname = ''
 portnumber = 11808
-password = 'bIgZuvFxfnzsL4GWnUdmuc3WGlFHugW0'
+password = ''
 r = redis.StrictRedis(host=hostname,port= portnumber,password=password)
 def retrive_data(name):
     retrive_dict= r.hgetall(name)
